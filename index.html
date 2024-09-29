@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Library Management Login</title>
+    <style>
+        body{
+            background-color: rgb(218, 206, 192);
+        }
+        .login-container{
+            background-color: white;
+            margin: 150px auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="login-container">
+        <h1>Library Management System</h1>
+        <!-- <form method="post"> -->
+            <input type="text" class="email" name="remail" placeholder="Username or Email" required>
+            <input type="password" class="pass" name="rpassword" placeholder="Password" required>
+            <div>
+                <h4>Login As: <select name="access" class="access"><option name="acs" value="signup">User</option>
+                    <option name="acs" value="admin">Admin</option></select></h4>
+            </div>
+            <div class="b_c">
+            <button type="submit" class="cancel">Cancel</button>
+            <button name="login" class="login">Log In</button>
+            </div>
+        
+    </div>
+    <script>
+        document.querySelector(".cancel").addEventListener("click",()=>{
+            document.querySelector(".email").value="";
+            document.querySelector(".pass").value="";
+        });
+        document.querySelector(".login").addEventListener("click",()=>{
+            let id="Dharani123";
+            let password="123456";
+            let id1="Dharani12";
+            let password1="1234";
+            let check1=document.querySelector(".email").value;
+            let check2=document.querySelector(".pass").value;
+            let check3=document.querySelector(".access").value;
+            if(check1==id && check2==password && check3=='admin')
+        {
+            window.location.href="Admin home page.html";
+        }
+
+        else if(check1==id1 && check2==password1 && check3=='signup')
+        {
+            window.location.href="user home page.html";
+        }
+        else{
+            alert("Enter valid id and password");
+        }
+
+            // document.querySelector(".pass").value="";
+
+        });
+    </script>
+    <!-- </form> -->
+</body>
+</html>

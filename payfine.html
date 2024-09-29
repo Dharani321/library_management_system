@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(205, 202, 202);
+        }
+        .container{
+            width:20%;
+            margin:100px auto;
+            background-color:white;
+            padding:5px 20px 5px 20px;
+            /* border-radius: 2rem; */
+        }
+        button:hover{
+            background-color: blue;
+            cursor:pointer;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 style="text-align:center;text-decoration:underline;background-color: grey;">Pay Fine</h3>
+        <table style="margin: auto;">
+            <tr>
+                <td style="border:2px  solid">
+                   Enter Book Name
+                </td>
+                <td style="border:2px solid">
+                    <select>
+                        <option>C</option>
+                        <option>Java</option>
+                        <option>Python</option>
+                     </select>
+                 </td>
+                
+            </tr>
+            <tr>
+                <td style="border:2px  solid">
+                   Enter Author 
+                 </td>
+                 <td style="border:2px solid">
+                    <select>
+                        <option>A1</option>
+                        <option>A2</option>
+                        <option>A3</option>
+                     </select>
+                  </td>
+                  
+            </tr>
+            <tr>
+                <td style="border:2px  solid">
+                  Serial Number
+                 </td>
+                 <td style="border:2px solid">
+                     <input type="text" >
+                  </td>
+                 
+            </tr>
+            <tr>
+                <td style="border:2px  solid">
+                    Issue Date
+                 </td>
+                 <td style="border:2px  solid">
+                    <input type="date">
+                  </td>
+                 
+            </tr>
+            <tr>
+                <td style="border:2px  solid">
+                   Return Date
+                 </td>
+                 <td style="border:2px  solid">
+                    <input type="date">
+                  </td>
+                 
+            </tr>
+    
+           
+            <tr>
+                <td style="border:2px  solid">
+                    Actual Return Date
+                 </td>
+                 <td style="border:2px  solid">
+                     <input type="date">
+                  </td>
+                 
+            </tr>
+            <tr>
+                <td style="border:2px solid">
+                  Fine calculated
+                 </td>
+                 <td style="border:2px solid">
+                     <input type="text" value="0">
+                  </td>
+                 
+            </tr>
+            <tr>
+                <td style="border:2px  solid">
+                  Fine paid
+                 </td>
+                 <td style="border:2px  solid">
+                     <input type="checkbox" value="">
+                  </td>
+                 
+            </tr>
+            <tr>
+                <td style="border:2px  solid">
+                  Remarks
+                 </td>
+                 <td style="border:2px  solid">
+                     <input type="textarea" value="">
+                  </td>
+                 
+            </tr>
+            
+        </table>
+        <br>
+        <br>
+        <div style="display:flex; justify-content: space-between;">
+        <button>Cancel</button>
+        <button>Confirm</button>
+    </div>
+    </div>
+</body>
+</html>
